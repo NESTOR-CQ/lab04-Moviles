@@ -64,3 +64,17 @@ fun PreviewMiCard() {
     MiCard()
 }
 
+//Segundo componente Chekbox
+@Composable
+fun MiCheckbox() {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Checkbox(checked = true, onCheckedChange = {})
+        Text("Ejemplo Checkbox")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewMiCheckbox() {
+    MiCheckbox()
+}
