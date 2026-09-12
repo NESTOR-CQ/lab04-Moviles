@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Card
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Scaffold
@@ -77,4 +78,20 @@ fun MiCheckbox() {
 @Composable
 fun PreviewMiCheckbox() {
     MiCheckbox()
+}
+
+//Tercer componente LazyColumn
+@Composable
+fun MiLista() {
+    LazyColumn {
+        item {
+            Text("Elemento de lista 1", modifier = Modifier.padding(8.dp))
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewMiLista() {
+    MiLista()
 }
